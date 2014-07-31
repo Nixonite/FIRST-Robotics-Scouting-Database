@@ -1,10 +1,18 @@
-<head><title>FIRST Team 696 Database</title>
-<link rel=StyleSheet href="/css/stylesheet.css"
-type="text/css">
+<html>
+<head>
+<title>FIRST Team 696 Database</title>
 </head>
 
-<?php include('header.php'); ?>
+<link rel=StyleSheet href="/scouting/css/stylesheet.css" type="text/css">
 
+<body>
+<div id="wrap">
+
+<div id="header">
+<?php include('header.php'); ?>
+</div>
+
+<div id="main">
 	<?php $page = basename($_SERVER['QUERY_STRING']);
 			if(!$page){
 				include('main.php');
@@ -21,7 +29,13 @@ type="text/css">
 				}
 			}
 	?>
+</div>
 	<br><br>
 	
-
+<div id="footer">
 <?php include('footer.php'); ?>
+</div>
+
+</div>
+</body>
+</html>

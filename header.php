@@ -1,5 +1,17 @@
-<h1>FIRST Team 696 Scouting Database</h1>
-<br />
-<a href="index.php">Home</a> | <a href="index.php?submit">Submit</a> | <a href="index.php?showdata">Get Data</a> | <a href="roll.swf">Bored</a> | <a href="index.php?howto">Need Help?</a>
+<table>
+<tr>
+<td><h1>FIRST Team 696 Scouting Database 2012</h1></td>
+<td rowspan="2" padding="6">
 
-<hr>
+</td>
+<tr>
+<td>
+<li><a class="header" href="index.php">Home</a></li>
+<li><a class="header" href="index.php?submit">Submit</a></li>
+<li><a class="header" href="index.php?showdata">Show Data</a></li>
+<li><a class="header" href="index.php?rank">Rankings</a></li>
+<li><a class="header" href="index.php?media">Bored</a></li>
+<li><a class="header" href="index.php?howto">Need Help?</a></li>
+</td>
+</tr>
+</table>

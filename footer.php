@@ -1,3 +1,3 @@
-<hr>
-<p>Created by Team 696 - Allen ThePirate</p>
+
+<p>Created by Allen ThePirate - Team696</p>
 <br />

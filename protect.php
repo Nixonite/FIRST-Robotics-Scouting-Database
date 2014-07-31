@@ -1,5 +1,5 @@
 <?php
-
+//U3VjayBNeSBEaWNr
 /** @class: InputFilter (PHP4 & PHP5, with comments)
   * @project: PHP Input Filter
   * @date: 10-05-2005

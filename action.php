@@ -1,5 +1,4 @@
 <?php
-
 include ('connection.php');
 include ('protect.php');
 
@@ -15,13 +14,12 @@ $speed = $_POST['speed'];
 $agility = $_POST['agility'];
 $power = $_POST['power'];
 $playingstyle = $_POST['playingstyle'];
+$hoop = $_POST['hoop'];
+$platform = $_POST['platform'];
 $autonomous = $_POST['autonomous'];
-$arm = $_POST['arm'];
-$arm_reach = $_POST['arm_reach'];
-$minibot = $_POST['minibot'];
-$penalties = $_POST['penalties'];
-$score = $_POST['score'];
+$fouls = $_POST['fouls'];
 $comments = $_POST['comments'];
+$score = $_POST['score'];
 
 $filter = new inputFilter();
 $comments = mysql_real_escape_string($comments);
@@ -29,7 +27,7 @@ $comments = $filter->process($comments);
 $comments = $filter->FilterTags($comments);
 $comments = $filter->safeSQL($comments,$connection);
 
-$postSQL="insert into teams (teamnumber,doesitwork,speed,agility,power,playingstyle,autonomous,arm,arm_reach,minibot,comments,penalties,score) values('$teamnumber','$doesitwork','$speed','$agility','$power','$playingstyle','$autonomous','$arm','$arm_reach','$minibot','$comments','$penalties','$score')";
+$postSQL="insert into teams (teamnumber,doesitwork,speed,agility,power,playingstyle,hoop,platform,autonomous,comments,fouls,score) values('$teamnumber','$doesitwork','$speed','$agility','$power','$playingstyle','$hoop','$platform','$autonomous','$comments','$fouls','$score')";
 mysql_query($postSQL,$connection) or die(mysql_error());
 
 }
@@ -47,5 +45,4 @@ mysql_query($doesnotworkSQL,$connection) or die(mysql_error());
 
 $URL="index.php";
 header ("Location: $URL");
-
 ?>

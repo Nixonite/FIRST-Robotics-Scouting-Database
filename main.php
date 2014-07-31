@@ -12,5 +12,5 @@ while ($row = mysql_fetch_array($getSQLResult))
 $counter++;
 }
 
-echo "<br/><br/>Currently We Have Entered <font color='023fff'><b>".$counter."</b></font> Lines Of Data!<br/>Overall We Have <font color='023fff'><b>".($counter*13)."</b></font> Pieces Of Data!<br/><br/>";
+echo "<br/><br/>Currently We Have Entered <font color='FF00FF'><b>".$counter."</b></font> Lines Of Data!<br/>Overall We Have <font color='FF00FF'><b>".($counter*13)."</b></font> Pieces Of Data!<br/><br/>";
 ?>

@@ -6,7 +6,7 @@ $getSQL = "select distinct teamnumber from teams order by teamnumber";
 $getSQLResult=mysql_query($getSQL,$connection); 
 
 $counter=0;
-echo "<table border='1' cellpadding='10'><tr>";
+echo "<table border='0' cellpadding='6'><tr>";
 
 while ($row = mysql_fetch_array($getSQLResult)){
 
